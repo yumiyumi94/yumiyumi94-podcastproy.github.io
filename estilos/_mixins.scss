@@ -1,0 +1,26 @@
+@import'./variables';
+
+@mixin movil {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+@mixin compu{
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin boton {
+        height: 48px;
+        width: 288px;
+        background-color: $boton;
+        color: $letra_oscuro; 
+        border:none;
+}
+
+@mixin fondo{
+    background-image: linear-gradient(#0000FF, #0000A3);
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}

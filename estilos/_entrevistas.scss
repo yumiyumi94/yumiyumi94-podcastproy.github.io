@@ -1,0 +1,30 @@
+@import'./variables';
+
+#entrevistas{
+    h2{
+        @media(min-width:$min_w){
+            margin-left: 200px;
+        }
+    }
+}
+
+.entrevistas{
+    @include movil;
+
+    @media (min-width:$min_w){
+        margin: 0;
+
+        @include compu;
+    }
+
+    img{
+        width: 100%;
+        height: auto;
+        margin: 0;
+
+        @media (min-width:$min_w){
+            width: 33%;
+            height: auto;
+        }
+    }
+}

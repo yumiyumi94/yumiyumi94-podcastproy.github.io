@@ -1,0 +1,28 @@
+@import'./variables';
+@import'./mixins';
+
+.novedades{
+    @include movil;
+
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    h2{
+        color: $letra_claro;
+        text-align: center;
+        font-size: 36px;
+
+        @media(min-width:$min_w){
+            font-size: 48px;
+        }
+    }
+
+}
+
+.fondo2{
+    height: 280px;
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+
+    @include fondo;
+}

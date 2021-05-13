@@ -1,0 +1,25 @@
+@import'./variables';
+
+.intro{
+    @include movil;
+    gap: 20px;
+
+    @media (min-width:$min_w){
+        margin-left: 200px;
+    }
+
+    p{
+        width: 50vw;
+    }
+
+    .punto{
+        @media (min-width:$min_w){
+            color: blue;
+        }
+    }
+
+}
+
+.world{
+    text-decoration: line-through;
+}

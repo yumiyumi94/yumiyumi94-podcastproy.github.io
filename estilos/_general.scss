@@ -1,0 +1,64 @@
+@import'./variables';
+@import'./mixins';
+
+
+*{
+    box-sizing: border-box;
+    margin:5px;
+    padding: 0;
+    color: $letra_oscuro;
+    font-family: 'IBM Plex Mono', monospace;
+
+    @media (min-width:$min_w){
+        margin: 0;
+    }
+}
+
+h1,h2{
+    font-size: 36px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+p{
+    font-size: 14px;
+}
+
+@media (min-width:325px){
+    h1,h2{
+        font-size: 64px;
+    }
+    p{
+        font-size: 16px;
+    }
+}
+
+.boton{
+    background-color: $boton;
+    border: 2px solid $boton;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: auto;
+
+    @include boton;
+
+    &:hover{
+        transform: scale(1.3);
+        background-image: linear-gradient(left, $boton, #0000FE);
+    }
+}
+
+.letra_b{
+    font-size: 16px;
+    text-decoration: none;
+
+    &:hover{
+        color: $letra_claro;
+    }
+}
+
+a{
+    text-decoration: none;
+}

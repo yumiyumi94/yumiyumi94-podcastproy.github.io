@@ -1,0 +1,108 @@
+@import'./variables';
+@import'./mixins';
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    @media (min-width:$min_w){
+        justify-content: space-between;
+        margin: 0 50px 0 50px;
+    }
+
+    img{
+        margin-top: 0px;
+    }
+}
+
+/*.nav_bar{
+
+    input, label{
+        @media(min-width:$min_w){
+            display: none;
+        }
+    }
+}*/
+
+.menu{
+    margin-top: 0;
+    height: 35vh;
+    width: 40vw;
+    background-color: $fondo;
+    transform: translateY(-130%);
+
+    @media(min-width:$min_w) {
+        transform: translateY(0%);
+        background-color: white;
+        height: 5vh;
+    }
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    gap: 20px;
+    transition: all 500ms ease;
+
+    @media (min-width:$min_w){
+        margin-right: 100px;
+        margin-top: 10px;
+        flex-flow: row;
+        justify-content: space-around;
+        gap: 20px;
+    }
+}
+
+li{
+    margin-top: 10px;
+
+    &:hover{
+        text-decoration: line-through;
+    }
+
+    a{
+        color: $letra_claro;
+
+        &:hover{
+            color:$boton; 
+        }
+        &:active{
+            text-decoration: line-through;
+            color:$letra_claro;
+        }
+
+        @media(min-width:$min_w){
+            color: $letra_oscuro;
+        }
+    }
+}
+
+#check{
+    visibility: hidden;
+}
+
+.no{
+    visibility: hidden;
+}
+
+#check:checked ~ .menu{
+    transform: translateX(0%);
+}
+
+#check:checked ~ .checkbtn{
+    visibility: hidden;
+}
+
+#check:checked ~ .no{
+    visibility: visible;
+}
+
+.checkbtn{
+    @media (min-width:$min_w){
+        display: none;
+    }
+}

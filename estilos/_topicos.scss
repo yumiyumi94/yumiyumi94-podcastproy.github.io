@@ -1,0 +1,29 @@
+@import'./variables';
+@import'./mixins';
+
+#topicos{
+    h2{
+        margin-left: 10px;
+        
+        @media (min-width:$min_w){
+        margin-left: 200px;
+        }
+    }
+}
+.topicos{
+    justify-content: center;
+    align-items: center;
+     @include movil;
+
+     @media(min-width:$min_w){
+         justify-content:space-around;
+         margin-top: 30px;
+         @include compu;
+     }
+
+    p{
+        font-weight: 900;
+        font-size: 24px;
+        width: 200px;
+    }
+}

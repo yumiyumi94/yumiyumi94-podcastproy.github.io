@@ -1,0 +1,16 @@
+@import'./variables';
+@import'./mixins';
+
+footer{
+    @include movil;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width:$min_w){
+        height: 50px;
+        justify-content: space-between;
+        margin: 20px 100px 0 100px;
+
+        @include compu;
+    }
+}

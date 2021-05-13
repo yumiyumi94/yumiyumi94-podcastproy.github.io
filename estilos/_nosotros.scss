@@ -1,0 +1,30 @@
+@import'./variables';
+
+.nos{
+    margin-top: 100px;
+    @include movil;
+
+    @media (min-width:$min_w){
+        justify-content: center;
+        align-items: center;
+        
+        @include compu;
+    }
+
+    img{
+        width: 90vw;
+        height: auto;
+        z-index: 2;
+
+        @media (min-width:$min_w){
+            height: 660px;
+            width: auto;
+        }
+    }
+
+    p{
+        @media (min-width:$min_w){
+            width: 500px;
+        }
+    }
+}
