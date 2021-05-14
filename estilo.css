@@ -98,6 +98,15 @@ header {
 
 header img {
   margin-top: 0px;
+  -webkit-transform: translateY(-45%);
+          transform: translateY(-45%);
+}
+
+@media (min-width: 990px) {
+  header img {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 /*.nav_bar{
@@ -245,7 +254,6 @@ li a:active {
 .episodios {
   position: relative;
   margin-top: 50px;
-  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -312,6 +320,7 @@ li a:active {
   height: 1000px;
   -webkit-clip-path: polygon(0 4%, 100% 0%, 100% 96%, 0% 100%);
           clip-path: polygon(0 4%, 100% 0%, 100% 96%, 0% 100%);
+  z-index: -10;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
   background-image: linear-gradient(#0000FF, #0000A3);
   position: relative;
@@ -328,7 +337,9 @@ li a:active {
 }
 
 .nos {
-  margin-top: 100px;
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+  z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -346,6 +357,8 @@ li a:active {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-transform: translateY(-35%);
+            transform: translateY(-35%);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -359,7 +372,7 @@ li a:active {
 .nos img {
   width: 90vw;
   height: auto;
-  z-index: 2;
+  z-index: 100;
 }
 
 @media (min-width: 990px) {
@@ -415,6 +428,10 @@ li a:active {
     width: 33%;
     height: auto;
   }
+}
+
+#topicos {
+  margin-top: 50px;
 }
 
 #topicos h2 {
