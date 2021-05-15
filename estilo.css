@@ -306,12 +306,18 @@ li a:active {
 .spotify {
   border-radius: 10px;
   border: hidden;
-  width: 200px;
+  width: 40vw;
+  height: auto;
+}
+
+.spotify::-webkit-scrollbar {
+  display: none;
 }
 
 @media (min-width: 990px) {
   .spotify {
-    width: 500px;
+    height: auto;
+    width: 40vw;
   }
 }
 

@@ -31,10 +31,16 @@
 .spotify{
     border-radius: 10px;
     border:hidden;
-    width: 200px;
+    width: 40vw;
+    height: auto;
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
 
     @media (min-width:$min_w){
-        width: 500px;
+        height: auto;
+        width: 40vw;
     }
 }
 
