@@ -305,16 +305,13 @@ li a:active {
 .spotify {
   border-radius: 10px;
   border: hidden;
-  width: 40vw;
-  height: auto;
-  /*overflow: scroll;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    scrollbar-width: 0;
+  width: 80vw;
+  height: 232px;
+  overflow: hidden;
+}
 
-    &::-webkit-scrollbar{
-        display: none;
-    }*/
+.spotify::-webkit-scrollbar {
+  display: none;
 }
 
 @media (min-width: 990px) {
@@ -326,7 +323,7 @@ li a:active {
 
 .fondo {
   width: 100%;
-  height: 1000px;
+  height: 1300px;
   -webkit-clip-path: polygon(0 4%, 100% 0%, 100% 96%, 0% 100%);
           clip-path: polygon(0 4%, 100% 0%, 100% 96%, 0% 100%);
   z-index: -10;
