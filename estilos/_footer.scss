@@ -14,3 +14,7 @@ footer{
         @include compu;
     }
 }
+
+.fab:hover{
+    transform: scale(2);
+}

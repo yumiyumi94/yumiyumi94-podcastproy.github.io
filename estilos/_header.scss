@@ -13,23 +13,15 @@ header{
     }
 
     img{
-        margin-top: 0px;
+        margin-top: 5px;
         transform: translateY(-45%);
 
         @media (min-width:$min_w){
+            margin-top: 40px;
             transform: translateY(0);
         }
     }
 }
-
-/*.nav_bar{
-
-    input, label{
-        @media(min-width:$min_w){
-            display: none;
-        }
-    }
-}*/
 
 .menu{
     margin-top: 0;

@@ -20,6 +20,8 @@
 .ep{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     @media (min-width:$min_w){
         justify-content: space-evenly;
@@ -33,10 +35,14 @@
     border:hidden;
     width: 40vw;
     height: auto;
+    /*overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scrollbar-width: 0;
 
     &::-webkit-scrollbar{
         display: none;
-    }
+    }*/
 
     @media (min-width:$min_w){
         height: auto;
